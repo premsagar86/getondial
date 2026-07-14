@@ -1,0 +1,4 @@
+# Redirect all routes to index.html for Flutter web SPA routing
+# This ensures deep links work correctly
+/*    /index.html   200
+

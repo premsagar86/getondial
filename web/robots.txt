@@ -1,0 +1,42 @@
+# ===============================
+# Robots.txt for Get On Dial
+# Domain: https://getondial.com
+# Purpose: Allow search engines to index all public content
+# ===============================
+
+User-agent: *
+# ✅ Allow all main pages to be indexed
+Allow: /
+
+# 🚫 Block unnecessary Flutter build or config files
+Disallow: /build/
+Disallow: /assets/NOT_INDEXABLE/
+Disallow: /icons/
+Disallow: /manifest.json
+Disallow: /flutter_service_worker.js
+Disallow: /version.json
+
+# ✅ Sitemap for crawlers
+Sitemap: https://getondial.com/sitemap.xml
+
+# ===============================
+# Extra crawler optimizations
+# ===============================
+# Let Pinterest, Google, and social platforms crawl images
+Allow: /assets/
+Allow: /images/
+Allow: /uploads/
+
+# Googlebot news, images, and videos allowed
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# ===============================
+# End of robots.txt
+# ===============================
